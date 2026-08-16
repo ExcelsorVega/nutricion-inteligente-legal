@@ -3,128 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Politica de Privacidad - Nutricion Inteligente</title>
+  <title>Política de Privacidad - Nutrición Inteligente</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0B0B0C;
-      color: #D1D5DB;
+      background: #F6F7F0;
+      color: #526159;
       line-height: 1.7;
       padding: 24px 16px 64px;
       max-width: 760px;
       margin: 0 auto;
     }
-    h1 { color: #14F195; font-size: 28px; margin-bottom: 6px; }
-    h2 { color: #F9FAFB; font-size: 18px; margin: 32px 0 10px; }
+    h1 { color: #1D2B24; font-size: 32px; line-height: 1.15; margin-bottom: 6px; }
+    h2 { color: #1D2B24; font-size: 19px; margin: 32px 0 10px; }
     p  { margin-bottom: 12px; font-size: 15px; }
     ul { padding-left: 20px; margin-bottom: 12px; }
     li { margin-bottom: 6px; font-size: 15px; }
-    .meta { color: #6B7280; font-size: 13px; margin-bottom: 32px; }
-    a  { color: #14F195; text-decoration: none; }
+    .meta { color: #748078; font-size: 13px; margin-bottom: 32px; }
+    a  { color: #216A48; font-weight: 700; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    strong[style] { color: #1D2B24 !important; }
     .card {
-      background: #111113;
-      border: 1px solid #1E1E1E;
+      background: #FFFFFF;
+      border: 1px solid #DBE3DC;
       border-radius: 16px;
       padding: 20px;
       margin-bottom: 12px;
+      box-shadow: 0 10px 28px rgba(38, 68, 52, .06);
+    }
+    .delete-card { background: #F4FBF6; border-color: #BAD8C5; }
+    .button {
+      display: inline-block;
+      min-height: 48px;
+      margin-top: 6px;
+      padding: 13px 18px;
+      border-radius: 14px;
+      background: #2B7652;
+      color: #FFFFFF;
     }
   </style>
 </head>
 <body>
 
-  <h1>Politica de Privacidad</h1>
-  <p class="meta">Nutricion Inteligente - Ultima actualizacion: 13 de julio de 2026</p>
+  <h1>Política de Privacidad</h1>
+  <p class="meta">Nutrición Inteligente · Última actualización: 16 de agosto de 2026</p>
 
   <div class="card">
     <p>
-      Tu privacidad es importante para nosotros. Esta politica explica que datos recopila
-      <strong style="color:#F9FAFB">Nutricion Inteligente</strong>, como los usamos y que opciones tienes para
-      gestionar tu cuenta y tus permisos durante la beta cerrada. El responsable de la aplicacion
+      Tu privacidad es importante para nosotros. Esta política explica qué datos recopila
+      <strong style="color:#F9FAFB">Nutrición Inteligente</strong>, cómo los usamos y qué opciones tienes para
+      gestionar tu cuenta y tus permisos durante la beta cerrada. El responsable de la aplicación
       en Google Play es <strong style="color:#F9FAFB">Excelsor Vega</strong>.
     </p>
   </div>
 
+  <div class="card delete-card" id="eliminar-cuenta">
+    <h2 style="margin-top:0">Eliminar tu cuenta</h2>
+    <p>
+      Puedes eliminarla dentro de la aplicación desde <strong>Perfil &gt; Eliminar cuenta</strong>
+      o solicitarlo desde la web aunque ya no tengas la app instalada.
+    </p>
+    <a class="button" href="./account_deletion.html">Ver las opciones de eliminación</a>
+  </div>
+
   <h2>1. Datos que recopilamos</h2>
   <ul>
-    <li><strong style="color:#F9FAFB">Datos de cuenta:</strong> nombre y correo electronico al registrarte.</li>
-    <li><strong style="color:#F9FAFB">Datos de perfil:</strong> peso, altura, edad, sexo biologico, objetivo y nivel de actividad que introduces voluntariamente.</li>
-    <li><strong style="color:#F9FAFB">Registros de alimentacion:</strong> alimentos, cantidades y favoritos que guardas en la app.</li>
-    <li><strong style="color:#F9FAFB">Datos de actividad:</strong> pasos, calorias activas y peso sincronizados desde Android Health Connect solo si concedes permiso.</li>
-    <li><strong style="color:#F9FAFB">Imagenes:</strong> fotos de comida que compartes para analisis nutricional. Si confirmas el registro, se guardan de forma privada junto a esa comida.</li>
-    <li><strong style="color:#F9FAFB">Voz para dictado:</strong> el audio se procesa mediante el reconocimiento del dispositivo para convertirlo a texto antes del analisis.</li>
-    <li><strong style="color:#F9FAFB">Notificaciones:</strong> si activas los avisos remotos de Aida, guardamos un identificador aleatorio de instalacion, el token de notificaciones, la plataforma, la version de la app y la zona horaria.</li>
-    <li><strong style="color:#F9FAFB">Productos escaneados:</strong> el codigo de barras se consulta en Open Food Facts para recuperar la informacion nutricional y la imagen verificable del producto.</li>
+    <li><strong style="color:#F9FAFB">Datos de cuenta:</strong> nombre y correo electrónico al registrarte.</li>
+    <li><strong style="color:#F9FAFB">Datos de perfil:</strong> peso, altura, edad, sexo biológico, objetivo y nivel de actividad que introduces voluntariamente.</li>
+    <li><strong style="color:#F9FAFB">Registros de alimentación:</strong> alimentos, cantidades y favoritos que guardas en la app.</li>
+    <li><strong style="color:#F9FAFB">Datos de actividad:</strong> pasos, calorías activas y peso sincronizados desde Android Health Connect solo si concedes permiso.</li>
+    <li><strong style="color:#F9FAFB">Imágenes:</strong> fotos de comida que compartes para análisis nutricional. Si confirmas el registro, se guardan de forma privada junto a esa comida.</li>
+    <li><strong style="color:#F9FAFB">Voz para dictado:</strong> el audio se procesa mediante el reconocimiento del dispositivo para convertirlo a texto; la aplicación no conserva la grabación.</li>
+    <li><strong style="color:#F9FAFB">Voz de Aida:</strong> con la opción Automática, cuando la voz remota está disponible, el texto de la respuesta se envía a Google Cloud para crear audio temporal. Puedes elegir «Solo móvil» en Perfil; en ese modo no enviamos el texto al servicio remoto de voz.</li>
+    <li><strong style="color:#F9FAFB">Notificaciones:</strong> si activas los avisos remotos de Aida, guardamos un identificador aleatorio de instalación, el token de notificaciones, la plataforma, la versión de la app y la zona horaria.</li>
+    <li><strong style="color:#F9FAFB">Reportes de contenido de IA:</strong> cuando decides reportar una respuesta, un análisis o una ilustración, guardamos solo el contenido necesario para identificarlo, el motivo y el detalle opcional que escribas. No se adjunta el resto de la conversación ni una foto tuya.</li>
+    <li><strong style="color:#F9FAFB">Productos escaneados:</strong> el código de barras se consulta en Open Food Facts para recuperar la información nutricional y la imagen verificable del producto.</li>
   </ul>
 
-  <h2>2. Como usamos los datos</h2>
+  <h2>2. Cómo usamos los datos</h2>
   <ul>
-    <li>Calcular tus objetivos de calorias y macronutrientes.</li>
-    <li>Mostrar tu historial y tus estadisticas.</li>
-    <li>Proporcionar respuestas del coach Aida y analisis de texto o imagen.</li>
-    <li>Sincronizar datos con Health Connect cuando ejecutas la accion manual dentro de la app.</li>
+    <li>Calcular tus objetivos de calorías y macronutrientes.</li>
+    <li>Mostrar tu historial y tus estadísticas.</li>
+    <li>Proporcionar respuestas del coach Aida y análisis de texto o imagen.</li>
+    <li>Revisar los reportes que envías para corregir contenido ofensivo, inseguro o incorrecto y mejorar nuestros filtros.</li>
+    <li>Sincronizar datos con Health Connect cuando ejecutas la acción manual dentro de la app.</li>
     <li>Programar recordatorios y check-ins si autorizas notificaciones.</li>
   </ul>
   <p>No vendemos ni compartimos tus datos con terceros con fines publicitarios.</p>
 
   <h2>3. Servicios de terceros</h2>
   <ul>
-    <li><strong style="color:#F9FAFB">Supabase</strong> - autenticacion, base de datos, storage y edge functions. <a href="https://supabase.com/privacy" target="_blank" rel="noreferrer">Politica de privacidad</a></li>
-    <li><strong style="color:#F9FAFB">Google Gemini</strong> - analisis de texto e imagen a traves de nuestro proxy seguro en Supabase. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Politica de privacidad de Google</a></li>
-    <li><strong style="color:#F9FAFB">Expo Push Service</strong> - entrega de los avisos remotos de Aida que activas voluntariamente. <a href="https://expo.dev/privacy" target="_blank" rel="noreferrer">Politica de privacidad de Expo</a></li>
-    <li><strong style="color:#F9FAFB">Open Food Facts</strong> - consulta de productos envasados mediante su codigo de barras. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noreferrer">Politica de privacidad de Open Food Facts</a></li>
-    <li><strong style="color:#F9FAFB">Android Health Connect</strong> - lectura de datos de actividad y peso solo si el usuario lo autoriza explicitamente.</li>
+    <li><strong style="color:#F9FAFB">Supabase</strong> - autenticación, base de datos, almacenamiento y funciones de servidor. <a href="https://supabase.com/privacy" target="_blank" rel="noreferrer">Política de privacidad</a></li>
+    <li><strong style="color:#F9FAFB">Google Gemini y Google Cloud Text-to-Speech</strong> - análisis de texto e imagen y generación opcional de la voz remota de Aida a través de servicios autenticados. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Google</a></li>
+    <li><strong style="color:#F9FAFB">Ollama Cloud</strong> - proveedor opcional de texto o visión que solo se utilizará cuando se habilite en el backend con fallback seguro. <a href="https://ollama.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Ollama</a></li>
+    <li><strong style="color:#F9FAFB">Expo Push Service</strong> - entrega de los avisos remotos de Aida que activas voluntariamente. <a href="https://expo.dev/privacy" target="_blank" rel="noreferrer">Política de privacidad de Expo</a></li>
+    <li><strong style="color:#F9FAFB">Open Food Facts</strong> - consulta de productos envasados mediante su código de barras. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noreferrer">Política de privacidad de Open Food Facts</a></li>
+    <li><strong style="color:#F9FAFB">Android Health Connect</strong> - lectura de datos de actividad y peso solo si el usuario lo autoriza explícitamente.</li>
   </ul>
 
   <h2>4. Seguridad</h2>
   <p>
     Los datos se transmiten mediante HTTPS/TLS. Las claves de proveedores externos no se almacenan
-    en el cliente. El acceso a los datos de cada usuario esta restringido a su cuenta.
+    en el cliente. El acceso a los datos de cada usuario está restringido a su cuenta. Las métricas
+    operativas de IA no guardan conversaciones, imágenes ni audio. Los reportes de IA se conservan
+    de forma privada mientras se revisan y se eliminan junto con tu cuenta.
   </p>
 
-  <h2>5. Retencion y eliminacion</h2>
+  <h2>5. Retención y eliminación</h2>
   <p>
     Las fotos se conservan hasta que eliminas la comida, quitas su imagen o borras la cuenta.
     Conservamos el resto de datos mientras la cuenta siga activa. Puedes eliminar tu cuenta y los datos
     asociados desde la propia app en <strong style="color:#F9FAFB">Perfil &gt; Eliminar cuenta</strong>.
-    Tambien puedes escribirnos si necesitas ayuda con esa solicitud.
+    También puedes solicitarla desde nuestra
+    <a href="./account_deletion.html">página de eliminación de cuenta</a>.
   </p>
 
   <h2>6. Menores de edad</h2>
   <p>
-    Esta aplicacion no esta destinada a menores de 18 anos. No recopilamos conscientemente datos
+    Esta aplicación no está destinada a menores de 18 años. No recopilamos conscientemente datos
     de menores.
   </p>
 
-  <h2>7. Aviso medico</h2>
+  <h2>7. Aviso médico</h2>
   <p>
-    Nutricion Inteligente es una herramienta informativa de seguimiento nutricional.
-    <strong style="color:#F9FAFB">No sustituye el consejo medico profesional</strong>, no diagnostica
-    enfermedades ni prescribe tratamientos. Consulta siempre a un medico o dietista titulado antes
+    Nutrición Inteligente es una herramienta informativa de seguimiento nutricional.
+    <strong style="color:#F9FAFB">No sustituye el consejo médico profesional</strong>, no diagnostica
+    enfermedades ni prescribe tratamientos. Consulta siempre a un médico o dietista titulado antes
     de realizar cambios significativos en tu dieta o rutina de ejercicio.
   </p>
 
   <h2>8. Tus derechos</h2>
   <ul>
     <li>Acceder y rectificar los datos que guardamos sobre ti.</li>
-    <li>Solicitar la eliminacion de tu cuenta y tus datos.</li>
-    <li>Revocar permisos de camara, microfono, notificaciones o Health Connect desde los ajustes del dispositivo.</li>
+    <li>Solicitar la eliminación de tu cuenta y tus datos.</li>
+    <li>Revocar permisos de cámara, micrófono, notificaciones o Health Connect desde los ajustes del dispositivo.</li>
+    <li>Reportar desde la aplicación cualquier respuesta, análisis o ilustración generada por IA que consideres ofensiva, insegura o incorrecta.</li>
   </ul>
 
-  <h2>9. Cambios en esta politica</h2>
+  <h2>9. Cambios en esta política</h2>
   <p>
-    Notificaremos cambios relevantes mediante una actualizacion de la app o un aviso visible en la
-    pantalla de acceso. La fecha de la ultima revision aparece en la cabecera de esta pagina.
+    Notificaremos cambios relevantes mediante una actualización de la app o un aviso visible en la
+    pantalla de acceso. La fecha de la última revisión aparece en la cabecera de esta página.
   </p>
 
   <h2>10. Contacto</h2>
   <p>
-    Para cualquier consulta sobre privacidad, soporte de cuenta o eliminacion de datos puedes
+    Para cualquier consulta sobre privacidad, soporte de cuenta o eliminación de datos puedes
     escribirnos a:<br />
     <a href="mailto:privacidad@excelsor.es">privacidad@excelsor.es</a>
   </p>
 
 </body>
 </html>
-
