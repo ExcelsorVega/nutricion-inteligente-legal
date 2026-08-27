@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nutricion-inteligente.pages.dev'),
+  metadataBase: new URL('https://nutricion-inteligente.excelsorvega.chatgpt.site'),
   title: {
     default: 'Nutrición Inteligente',
     template: '%s · Nutrición Inteligente',

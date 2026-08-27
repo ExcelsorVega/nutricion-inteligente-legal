@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date('2026-08-28T00:00:00+02:00');
 
   return routes.map((route) => ({
-    url: `https://nutricion-inteligente.pages.dev${route}`,
+    url: `https://nutricion-inteligente.excelsorvega.chatgpt.site${route}`,
     lastModified,
     changeFrequency: route === '' ? 'weekly' : 'monthly',
     priority: route === '' ? 1 : 0.7,

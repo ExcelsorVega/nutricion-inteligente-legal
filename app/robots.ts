@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://nutricion-inteligente.pages.dev/sitemap.xml',
+    sitemap: 'https://nutricion-inteligente.excelsorvega.chatgpt.site/sitemap.xml',
   };
 }
