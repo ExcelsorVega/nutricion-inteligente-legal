@@ -47,7 +47,7 @@
 <body>
 
   <h1>Política de Privacidad</h1>
-  <p class="meta">Nutrición Inteligente · Última actualización: 16 de agosto de 2026</p>
+  <p class="meta">Nutrición Inteligente · Última actualización: 6 de septiembre de 2026</p>
 
   <div class="card">
     <p>
@@ -71,15 +71,19 @@
   <ul>
     <li><strong style="color:#F9FAFB">Datos de cuenta:</strong> nombre y correo electrónico al registrarte.</li>
     <li><strong style="color:#F9FAFB">Datos de perfil:</strong> peso, altura, edad, sexo biológico, objetivo y nivel de actividad que introduces voluntariamente.</li>
+    <li><strong style="color:#F9FAFB">Personalización de salud opcional:</strong> programa, etapa vital declarada, prioridades, límites de seguridad y consentimiento. No inferimos etapas ni guardamos diagnósticos, medicación o historia clínica libre.</li>
     <li><strong style="color:#F9FAFB">Registros de alimentación:</strong> alimentos, cantidades y favoritos que guardas en la app.</li>
     <li><strong style="color:#F9FAFB">Datos de actividad:</strong> pasos, calorías activas y peso sincronizados desde Android Health Connect solo si concedes permiso.</li>
+    <li><strong style="color:#F9FAFB">Fotografía de perfil:</strong> si decides añadirla, se sirve mediante una URL pública para mostrarla en la aplicación. Cualquiera que conozca ese enlace puede verla; se elimina al borrar tu cuenta.</li>
     <li><strong style="color:#F9FAFB">Imágenes:</strong> fotos de comida que compartes para análisis nutricional. Si confirmas el registro, se guardan de forma privada junto a esa comida.</li>
-    <li><strong style="color:#F9FAFB">Voz para dictado:</strong> el audio se procesa mediante el reconocimiento del dispositivo para convertirlo a texto; la aplicación no conserva la grabación.</li>
-    <li><strong style="color:#F9FAFB">Voz de Aida:</strong> con la opción Automática, cuando la voz remota está disponible, el texto de la respuesta se envía a Google Cloud para crear audio temporal. Puedes elegir «Solo móvil» en Perfil; en ese modo no enviamos el texto al servicio remoto de voz.</li>
+    <li><strong style="color:#F9FAFB">Voz para dictado:</strong> con la opción Automática, la grabación se envía por HTTPS a una pasarela privada en Oracle y a Google Cloud Speech-to-Text. Se procesa de forma temporal y se elimina al finalizar. Con «Solo móvil», el audio no se envía a nuestro servicio remoto.</li>
+    <li><strong style="color:#F9FAFB">Voz de Aida:</strong> con la opción Automática, el texto de la respuesta se envía mediante la misma pasarela autenticada a Google Cloud para crear audio temporal. Puedes elegir «Solo móvil» en Perfil; en ese modo no enviamos el texto al servicio remoto de voz.</li>
     <li><strong style="color:#F9FAFB">Notificaciones:</strong> si activas los avisos remotos de Aida, guardamos un identificador aleatorio de instalación, el token de notificaciones, la plataforma, la versión de la app y la zona horaria.</li>
     <li><strong style="color:#F9FAFB">Reportes de contenido de IA:</strong> cuando decides reportar una respuesta, un análisis o una ilustración, guardamos solo el contenido necesario para identificarlo, el motivo y el detalle opcional que escribas. No se adjunta el resto de la conversación ni una foto tuya.</li>
     <li><strong style="color:#F9FAFB">Productos escaneados:</strong> el código de barras se consulta en Open Food Facts para recuperar la información nutricional y la imagen verificable del producto.</li>
   </ul>
+
+  <p><strong>Buzón de soporte:</strong> al pulsar Enviar al equipo guardamos el mensaje, las capturas y la nota de voz que eliges, junto a la versión de la aplicación y del sistema operativo. Se usan para gestionar incidencias y sugerencias, con acceso privado. No adjuntamos el diario ni conversaciones. Las notas se guardan como audio, sin transcripción automática ni envío a servicios de IA; los mensajes y adjuntos se eliminan al borrar la cuenta.</p>
 
   <h2>2. Cómo usamos los datos</h2>
   <ul>
@@ -87,7 +91,8 @@
     <li>Mostrar tu historial y tus estadísticas.</li>
     <li>Proporcionar respuestas del coach Aida y análisis de texto o imagen.</li>
     <li>Revisar los reportes que envías para corregir contenido ofensivo, inseguro o incorrecto y mejorar nuestros filtros.</li>
-    <li>Sincronizar datos con Health Connect cuando ejecutas la acción manual dentro de la app.</li>
+    <li>Sincronizar actividad y peso desde Health Connect después de que lo autorices: al abrir o volver a la aplicación y, periódicamente, mientras la utilizas.</li>
+    <li>Adaptar referencias educativas, la biblioteca y un consejo contextual ocasional cuando activas voluntariamente un programa de salud.</li>
     <li>Programar recordatorios y check-ins si autorizas notificaciones.</li>
   </ul>
   <p>No vendemos ni compartimos tus datos con terceros con fines publicitarios.</p>
@@ -95,7 +100,7 @@
   <h2>3. Servicios de terceros</h2>
   <ul>
     <li><strong style="color:#F9FAFB">Supabase</strong> - autenticación, base de datos, almacenamiento y funciones de servidor. <a href="https://supabase.com/privacy" target="_blank" rel="noreferrer">Política de privacidad</a></li>
-    <li><strong style="color:#F9FAFB">Google Gemini y Google Cloud Text-to-Speech</strong> - análisis de texto e imagen y generación opcional de la voz remota de Aida a través de servicios autenticados. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Google</a></li>
+    <li><strong style="color:#F9FAFB">Google Gemini y Google Cloud Speech-to-Text/Text-to-Speech</strong> - análisis de texto e imagen, dictado y generación opcional de la voz remota de Aida a través de servicios autenticados. Oracle aloja nuestra pasarela privada. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Google</a></li>
     <li><strong style="color:#F9FAFB">Ollama Cloud</strong> - proveedor opcional de texto o visión que solo se utilizará cuando se habilite en el backend con fallback seguro. <a href="https://ollama.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Ollama</a></li>
     <li><strong style="color:#F9FAFB">Expo Push Service</strong> - entrega de los avisos remotos de Aida que activas voluntariamente. <a href="https://expo.dev/privacy" target="_blank" rel="noreferrer">Política de privacidad de Expo</a></li>
     <li><strong style="color:#F9FAFB">Open Food Facts</strong> - consulta de productos envasados mediante su código de barras. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noreferrer">Política de privacidad de Open Food Facts</a></li>
@@ -105,7 +110,8 @@
   <h2>4. Seguridad</h2>
   <p>
     Los datos se transmiten mediante HTTPS/TLS. Las claves de proveedores externos no se almacenan
-    en el cliente. El acceso a los datos de cada usuario está restringido a su cuenta. Las métricas
+    en el cliente. El acceso a los datos privados de cada usuario está restringido a su cuenta; la
+    fotografía de perfil es la excepción descrita en el apartado 1. Las métricas
     operativas de IA no guardan conversaciones, imágenes ni audio. Los reportes de IA se conservan
     de forma privada mientras se revisan y se eliminan junto con tu cuenta.
   </p>
@@ -115,6 +121,8 @@
     Las fotos se conservan hasta que eliminas la comida, quitas su imagen o borras la cuenta.
     Conservamos el resto de datos mientras la cuenta siga activa. Puedes eliminar tu cuenta y los datos
     asociados desde la propia app en <strong style="color:#F9FAFB">Perfil &gt; Eliminar cuenta</strong>.
+    También puedes pausar o eliminar por separado la personalización opcional desde
+    <strong style="color:#F9FAFB">Perfil &gt; Personalización de salud</strong>.
     También puedes solicitarla desde nuestra
     <a href="./account_deletion.html">página de eliminación de cuenta</a>.
   </p>
