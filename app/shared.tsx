@@ -5,7 +5,7 @@ export function SiteBrand() {
   return (
     <Link className="brand" href="/" aria-label="Nutrición Inteligente, inicio">
       <span className="brand-mark">
-        <Image src="/marca-nutricion-inteligente.png" alt="" width={54} height={54} priority />
+        <Image src="/marca-brote-sereno.png" alt="" width={54} height={54} priority />
       </span>
       <span>Nutrición Inteligente</span>
     </Link>
@@ -35,8 +35,8 @@ export function SiteFooter() {
         <SiteBrand />
         <p>Seguimiento nutricional sencillo, educativo y privado.</p>
         <div className="footer-links">
-          <a href="/privacidad">Privacidad</a>
-          <a href="/eliminar-cuenta">Eliminar cuenta</a>
+          <a href="https://excelsorvega.github.io/nutricion-inteligente-legal/">Privacidad</a>
+          <a href="https://excelsorvega.github.io/nutricion-inteligente-legal/account_deletion.html">Eliminar cuenta</a>
           <a href="/soporte">Contacto</a>
         </div>
       </div>

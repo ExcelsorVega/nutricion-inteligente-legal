@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Centro oficial de información, aprendizaje y soporte de Nutrición Inteligente para Android.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon-brote-sereno.png',
   },
   openGraph: {
     type: 'website',
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
       'Registra tus comidas, comprende tu progreso y aprende a tomar decisiones con más contexto.',
     images: [
       {
-        url: '/og-nutricion-inteligente.png',
-        width: 1200,
-        height: 630,
-        alt: 'Nutrición Inteligente: entiende lo que comes, sin complicarlo.',
+        url: '/og-brote-sereno.png',
+        width: 1024,
+        height: 500,
+        alt: 'Nutrición Inteligente: hoy vamos paso a paso.',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Nutrición Inteligente',
     description:
       'Registra tus comidas, comprende tu progreso y aprende a tomar decisiones con más contexto.',
-    images: ['/og-nutricion-inteligente.png'],
+    images: ['/og-brote-sereno.png'],
   },
 };
 
