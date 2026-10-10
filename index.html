@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de privacidad - Nutrición Inteligente</title>
   <link rel="icon" type="image/png" href="./favicon-brote-sereno.png" />
-  <title>Política de Privacidad - Nutrición Inteligente</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -19,12 +19,12 @@
     h1 { color: #1D2B24; font-size: 32px; line-height: 1.15; margin-bottom: 6px; }
     h2 { color: #1D2B24; font-size: 19px; margin: 32px 0 10px; }
     p  { margin-bottom: 12px; font-size: 15px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul, ol { padding-left: 20px; margin-bottom: 12px; }
     li { margin-bottom: 6px; font-size: 15px; }
-    .meta { color: #748078; font-size: 13px; margin-bottom: 32px; }
-    a  { color: #216A48; font-weight: 700; text-decoration: none; }
+    .meta { color: #748078; font-size: 13px; margin-bottom: 24px; }
+    a  { color: #216A48; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
     a:hover { text-decoration: underline; }
-    strong[style] { color: #1D2B24 !important; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 24px; font-size: 14px; }
     .card {
       background: #FFFFFF;
       border: 1px solid #DBE3DC;
@@ -33,7 +33,7 @@
       margin-bottom: 12px;
       box-shadow: 0 10px 28px rgba(38, 68, 52, .06);
     }
-    .delete-card { background: #F4FBF6; border-color: #BAD8C5; }
+    .primary { background: #F4FBF6; border-color: #BAD8C5; }
     .button {
       display: inline-block;
       min-height: 48px;
@@ -43,125 +43,87 @@
       background: #2B7652;
       color: #FFFFFF;
     }
+    .note { color: #66736c; font-size: 14px; }
+    footer { margin-top: 32px; color: #66736c; font-size: 14px; }
   </style>
 </head>
 <body>
-
-  <h1>Política de Privacidad</h1>
-  <p class="meta">Nutrición Inteligente · Última actualización: 6 de septiembre de 2026</p>
-
-  <div class="card">
-    <p>
-      Tu privacidad es importante para nosotros. Esta política explica qué datos recopila
-      <strong style="color:#F9FAFB">Nutrición Inteligente</strong>, cómo los usamos y qué opciones tienes para
-      gestionar tu cuenta y tus permisos durante la beta cerrada. El responsable de la aplicación
-      es <strong style="color:#F9FAFB">Ernesto Ruiz Moreno</strong>.
-    </p>
-  </div>
-
-  <div class="card delete-card" id="eliminar-cuenta">
-    <h2 style="margin-top:0">Eliminar tu cuenta</h2>
-    <p>
-      Puedes eliminarla dentro de la aplicación desde <strong>Perfil &gt; Eliminar cuenta</strong>
-      o solicitarlo desde la web aunque ya no tengas la app instalada.
-    </p>
-    <a class="button" href="./account_deletion.html">Ver las opciones de eliminación</a>
-  </div>
-
-  <h2>1. Datos que recopilamos</h2>
+  <h1>Política de privacidad</h1>
+  <p class="meta">Nutrición Inteligente · Última actualización: 10 de octubre de 2026</p>
+  <nav aria-label="Documentos legales">
+    <a href="https://excelsorvega.github.io/nutricion-inteligente-legal/">Política de privacidad</a>
+    <a href="https://excelsorvega.github.io/nutricion-inteligente-legal/condiciones.html">Condiciones de uso</a>
+    <a href="./account_deletion.html">Eliminar cuenta</a>
+  </nav>
+  <div class="card"><p>Explicamos qué datos usa Nutrición Inteligente, para qué, con quién los compartimos y cómo puedes controlarlos. Tus datos de salud solo se usan si lo aceptas, la inteligencia artificial solo si también lo aceptas, y puedes cambiar de opinión cuando quieras.</p></div>
+  <h2 id="responsable">1. Quién es el responsable</h2>
+  <p>El responsable del tratamiento es Ernesto Ruiz Moreno, que desarrolla la aplicación como persona física. Puedes escribirle para cualquier asunto de privacidad a <a href="mailto:privacidad@sideraldynamic.com">privacidad@sideraldynamic.com</a>.</p>
+  <h2 id="datos">2. Qué datos tratamos</h2>
   <ul>
-    <li><strong style="color:#F9FAFB">Datos de cuenta:</strong> nombre y correo electrónico al registrarte.</li>
-    <li><strong style="color:#F9FAFB">Datos de perfil:</strong> peso, altura, edad, sexo biológico, objetivo y nivel de actividad que introduces voluntariamente.</li>
-    <li><strong style="color:#F9FAFB">Personalización de salud opcional:</strong> programa, etapa vital declarada, prioridades, límites de seguridad y consentimiento. No inferimos etapas ni guardamos diagnósticos, medicación o historia clínica libre.</li>
-    <li><strong style="color:#F9FAFB">Registros de alimentación:</strong> alimentos, cantidades y favoritos que guardas en la app.</li>
-    <li><strong style="color:#F9FAFB">Datos de actividad:</strong> pasos, calorías activas y peso sincronizados desde Android Health Connect solo si concedes permiso.</li>
-    <li><strong style="color:#F9FAFB">Fotografía de perfil:</strong> si decides añadirla, se sirve mediante una URL pública para mostrarla en la aplicación. Cualquiera que conozca ese enlace puede verla; se elimina al borrar tu cuenta.</li>
-    <li><strong style="color:#F9FAFB">Imágenes:</strong> fotos de comida que compartes para análisis nutricional. Si confirmas el registro, se guardan de forma privada junto a esa comida.</li>
-    <li><strong style="color:#F9FAFB">Voz para dictado:</strong> con la opción Automática, la grabación se envía por HTTPS a una pasarela privada en Oracle y a Google Cloud Speech-to-Text. Se procesa de forma temporal y se elimina al finalizar. Con «Solo móvil», el audio no se envía a nuestro servicio remoto.</li>
-    <li><strong style="color:#F9FAFB">Voz de Aida:</strong> con la opción Automática, el texto de la respuesta se envía mediante la misma pasarela autenticada a Google Cloud para crear audio temporal. Puedes elegir «Solo móvil» en Perfil; en ese modo no enviamos el texto al servicio remoto de voz.</li>
-    <li><strong style="color:#F9FAFB">Notificaciones:</strong> si activas los avisos remotos de Aida, guardamos un identificador aleatorio de instalación, el token de notificaciones, la plataforma, la versión de la app y la zona horaria.</li>
-    <li><strong style="color:#F9FAFB">Reportes de contenido de IA:</strong> cuando decides reportar una respuesta, un análisis o una ilustración, guardamos solo el contenido necesario para identificarlo, el motivo y el detalle opcional que escribas. No se adjunta el resto de la conversación ni una foto tuya.</li>
-    <li><strong style="color:#F9FAFB">Productos escaneados:</strong> el código de barras se consulta en Open Food Facts para recuperar la información nutricional y la imagen verificable del producto.</li>
+    <li>Cuenta: nombre, correo electrónico y, si entras con Google, la foto de tu cuenta de Google. Si añades una foto de perfil, se guarda en una dirección pública: cualquiera que tenga el enlace puede verla. Se borra al quitarla o al eliminar la cuenta.</li>
+    <li>Datos de salud que introduces: peso, altura, edad, sexo, nivel de actividad, objetivo, objetivo de calorías y objetivo de peso.</li>
+    <li>Tu diario: comidas, cantidades, nutrientes estimados, favoritos y las fotos de comidas que decides guardar, que son privadas. El agua y los ayunos se guardan solo en tu teléfono.</li>
+    <li>Health Connect, solo si lo autorizas: pasos, calorías activas, peso y sueño (inicio, fin y duración), junto con la aplicación de la que proceden.</li>
+    <li>Personalización de salud, opcional: etapa vital (por ejemplo, menopausia), prioridades y avisos de seguridad que declares, como embarazo, lactancia, restricción de proteínas o de líquidos, o una dieta médica. No guardamos diagnósticos, medicación ni historia clínica.</li>
+    <li>Conversaciones con Aida: no se guardan en nuestros servidores; desaparecen al cerrar el chat.</li>
+    <li>Mensajes al equipo: el texto, las capturas y la nota de voz que envíes desde «Ayúdanos a mejorar», con la versión de la aplicación y del sistema.</li>
+    <li>Reportes de contenido generado por inteligencia artificial: el contenido reportado, el motivo y el comentario que escribas.</li>
+    <li>Avisos de Aida, si los activas: un identificador de instalación, el token de notificaciones, la plataforma, la versión de la aplicación y la zona horaria.</li>
+    <li>Uso de la inteligencia artificial: qué función usaste, el proveedor, el resultado y el tiempo de respuesta, sin el contenido.</li>
+    <li>Tus decisiones de consentimiento: qué aceptaste o retiraste, la versión de los textos y la fecha.</li>
   </ul>
-
-  <p><strong>Buzón de soporte:</strong> al pulsar Enviar al equipo guardamos el mensaje, las capturas y la nota de voz que eliges, junto a la versión de la aplicación y del sistema operativo. Se usan para gestionar incidencias y sugerencias, con acceso privado. No adjuntamos el diario ni conversaciones. Las notas se guardan como audio, sin transcripción automática ni envío a servicios de IA; los mensajes y adjuntos se eliminan al borrar la cuenta.</p>
-
-  <h2>2. Cómo usamos los datos</h2>
+  <h2 id="finalidades">3. Para qué los usamos y con qué base legal</h2>
   <ul>
-    <li>Calcular tus objetivos de calorías y macronutrientes.</li>
-    <li>Mostrar tu historial y tus estadísticas.</li>
-    <li>Proporcionar respuestas del coach Aida y análisis de texto o imagen.</li>
-    <li>Revisar los reportes que envías para corregir contenido ofensivo, inseguro o incorrecto y mejorar nuestros filtros.</li>
-    <li>Sincronizar actividad y peso desde Health Connect después de que lo autorices: al abrir o volver a la aplicación y, periódicamente, mientras la utilizas.</li>
-    <li>Adaptar referencias educativas, la biblioteca y un consejo contextual ocasional cuando activas voluntariamente un programa de salud.</li>
-    <li>Programar recordatorios y check-ins si autorizas notificaciones.</li>
+    <li>Gestionar tu cuenta, los recordatorios y el soporte: ejecución de las condiciones de uso que aceptas.</li>
+    <li>Guardar y usar tus datos de salud (perfil, diario, objetivos, actividad, sueño y personalización) para calcular objetivos orientativos y mostrar tu progreso: tu consentimiento explícito, que pedimos aparte.</li>
+    <li>Analizar textos y fotos de comidas y conversar con Aida mediante inteligencia artificial: tu consentimiento, que también pedimos aparte y es opcional.</li>
+    <li>Atender los reportes de contenido de inteligencia artificial, evitar abusos, mantener la seguridad y controlar el gasto del servicio: nuestro interés legítimo en que la aplicación sea segura y sostenible.</li>
+    <li>Enviarte avisos: tu permiso de notificaciones, que puedes retirar en cualquier momento.</li>
+    <li>No vendemos tus datos, no los usamos para publicidad y no tomamos decisiones automatizadas con efectos legales sobre ti. Las estimaciones y respuestas de la inteligencia artificial son sugerencias que puedes corregir.</li>
   </ul>
-  <p>No vendemos ni compartimos tus datos con terceros con fines publicitarios.</p>
-
-  <h2>3. Servicios de terceros</h2>
+  <h2 id="ia">4. Inteligencia artificial</h2>
+  <p>Si aceptas el uso de inteligencia artificial, enviamos a Google Gemini a través de nuestro servidor solo lo necesario para cada función:</p>
   <ul>
-    <li><strong style="color:#F9FAFB">Supabase</strong> - autenticación, base de datos, almacenamiento y funciones de servidor. <a href="https://supabase.com/privacy" target="_blank" rel="noreferrer">Política de privacidad</a></li>
-    <li><strong style="color:#F9FAFB">Google Gemini y Google Cloud Speech-to-Text/Text-to-Speech</strong> - análisis de texto e imagen, dictado y generación opcional de la voz remota de Aida a través de servicios autenticados. Oracle aloja nuestra pasarela privada. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Google</a></li>
-    <li><strong style="color:#F9FAFB">Ollama Cloud</strong> - proveedor opcional de texto o visión que solo se utilizará cuando se habilite en el backend con fallback seguro. <a href="https://ollama.com/privacy" target="_blank" rel="noreferrer">Política de privacidad de Ollama</a></li>
-    <li><strong style="color:#F9FAFB">Expo Push Service</strong> - entrega de los avisos remotos de Aida que activas voluntariamente. <a href="https://expo.dev/privacy" target="_blank" rel="noreferrer">Política de privacidad de Expo</a></li>
-    <li><strong style="color:#F9FAFB">Open Food Facts</strong> - consulta de productos envasados mediante su código de barras. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noreferrer">Política de privacidad de Open Food Facts</a></li>
-    <li><strong style="color:#F9FAFB">Android Health Connect</strong> - lectura de datos de actividad y peso solo si el usuario lo autoriza explícitamente.</li>
+    <li>Analizar una comida escrita: el texto que escribes o dictas.</li>
+    <li>Analizar una foto: la foto y la nota que añadas.</li>
+    <li>Hablar con Aida: tu mensaje, la conversación reciente, tu nombre de pila, tu objetivo de calorías, lo que has comido hoy y, si los has activado, los datos de personalización de salud; también la foto o el producto escaneado que compartas.</li>
+    <li>Revisar tus favoritos con Aida: tu mensaje y tus favoritos con sus calorías y macronutrientes.</li>
   </ul>
-
-  <h2>4. Seguridad</h2>
-  <p>
-    Los datos se transmiten mediante HTTPS/TLS. Las claves de proveedores externos no se almacenan
-    en el cliente. El acceso a los datos privados de cada usuario está restringido a su cuenta; la
-    fotografía de perfil es la excepción descrita en el apartado 1. Las métricas
-    operativas de IA no guardan conversaciones, imágenes ni audio. Los reportes de IA se conservan
-    de forma privada mientras se revisan y se eliminan junto con tu cuenta.
-  </p>
-
-  <h2>5. Retención y eliminación</h2>
-  <p>
-    Las fotos se conservan hasta que eliminas la comida, quitas su imagen o borras la cuenta.
-    Conservamos el resto de datos mientras la cuenta siga activa. Puedes eliminar tu cuenta y los datos
-    asociados desde la propia app en <strong style="color:#F9FAFB">Perfil &gt; Eliminar cuenta</strong>.
-    También puedes pausar o eliminar por separado la personalización opcional desde
-    <strong style="color:#F9FAFB">Perfil &gt; Personalización de salud</strong>.
-    También puedes solicitarla desde nuestra
-    <a href="./account_deletion.html">página de eliminación de cuenta</a>.
-  </p>
-
-  <h2>6. Menores de edad</h2>
-  <p>
-    Esta aplicación no está destinada a menores de 18 años. No recopilamos conscientemente datos
-    de menores.
-  </p>
-
-  <h2>7. Aviso médico</h2>
-  <p>
-    Nutrición Inteligente es una herramienta informativa de seguimiento nutricional.
-    <strong style="color:#F9FAFB">No sustituye el consejo médico profesional</strong>, no diagnostica
-    enfermedades ni prescribe tratamientos. Consulta siempre a un médico o dietista titulado antes
-    de realizar cambios significativos en tu dieta o rutina de ejercicio.
-  </p>
-
-  <h2>8. Tus derechos</h2>
+  <h2 id="ia-detalle">5. Qué hace Google con esos datos</h2>
+  <p>Usamos el servicio de pago de la API de Gemini. Según sus condiciones, Google no utiliza esos datos para entrenar sus modelos y solo los conserva durante un tiempo limitado para detectar abusos. No enviamos tu peso, altura, edad, sexo ni correo a la inteligencia artificial. Los mensajes que indican una crisis o un trastorno de la conducta alimentaria no se envían: Aida responde con un mensaje fijo de ayuda.</p>
+  <h2 id="proveedores">6. Con quién compartimos datos</h2>
+  <p>Solo con proveedores que tratan los datos por cuenta nuestra y con las garantías del Reglamento General de Protección de Datos:</p>
   <ul>
-    <li>Acceder y rectificar los datos que guardamos sobre ti.</li>
-    <li>Solicitar la eliminación de tu cuenta y tus datos.</li>
-    <li>Revocar permisos de cámara, micrófono, notificaciones o Health Connect desde los ajustes del dispositivo.</li>
-    <li>Reportar desde la aplicación cualquier respuesta, análisis o ilustración generada por IA que consideres ofensiva, insegura o incorrecta.</li>
+    <li>Supabase: aloja la cuenta, la base de datos y las fotos privadas en Irlanda (Unión Europea) y ejecuta nuestras funciones de servidor en sus centros de datos, normalmente los más cercanos a ti.</li>
+    <li>Google: Gemini (inteligencia artificial, si la aceptas), inicio de sesión con Google y Firebase Cloud Messaging para entregar los avisos.</li>
+    <li>Expo (650 Industries): servicio de envío de notificaciones de la aplicación.</li>
+    <li>Correos de la cuenta (confirmación del alta o código para cambiar la contraseña): los envía Supabase, directamente o a través de nuestro proveedor de correo, Resend.</li>
+    <li>Open Food Facts: recibe solo el código de barras que escaneas, para devolver los datos del producto.</li>
+    <li>Android Health Connect y el reconocimiento de voz de tu teléfono funcionan con sus propias condiciones. El dictado usa el servicio de voz de Google instalado en el teléfono; nosotros no recibimos el audio.</li>
   </ul>
-
-  <h2>9. Cambios en esta política</h2>
-  <p>
-    Notificaremos cambios relevantes mediante una actualización de la app o un aviso visible en la
-    pantalla de acceso. La fecha de la última revisión aparece en la cabecera de esta página.
-  </p>
-
-  <h2>10. Contacto</h2>
-  <p>
-    Para cualquier consulta sobre privacidad, soporte de cuenta o eliminación de datos puedes
-    escribirnos a:<br />
-    <a href="mailto:privacidad@excelsor.es">privacidad@excelsor.es</a>
-  </p>
-
+  <h2 id="transferencias">7. Transferencias fuera de la Unión Europea</h2>
+  <p>Supabase, Google, Expo y Resend son empresas de Estados Unidos, así que algunos datos pueden tratarse allí aunque se guarden en la Unión Europea. Se hace con las garantías previstas en el Reglamento: el Marco de Privacidad de Datos UE-EE. UU. cuando la empresa está adherida y, en todo caso, cláusulas contractuales tipo aprobadas por la Comisión Europea.</p>
+  <h2 id="conservacion">8. Cuánto tiempo los conservamos</h2>
+  <ul>
+    <li>Mientras tengas la cuenta: perfil, diario, fotos, datos de salud, personalización, mensajes al equipo, reportes, métricas de uso de la inteligencia artificial y registro de consentimientos.</li>
+    <li>Las fotos de comidas, hasta que borras la comida o su foto. Los datos de Health Connect, hasta que los borras desde Perfil &gt; Privacidad; los pasos y pesos anteriores a septiembre de 2026 no indican de dónde vinieron y solo se borran si eliges borrarlos también. El peso de tu perfil se conserva hasta que lo cambies.</li>
+    <li>Los avisos de Aida: el dispositivo se borra al cerrar sesión, y los registros de acciones de los avisos, a los dos días.</li>
+    <li>Al eliminar la cuenta borramos todo lo anterior de forma inmediata y definitiva. Mientras la aplicación funcione por invitación, tu correo sigue en la lista de invitaciones hasta que nos pidas quitarlo.</li>
+  </ul>
+  <h2 id="derechos">9. Tus derechos y controles</h2>
+  <ul>
+    <li>Desde la aplicación puedes consultar y corregir tus datos, retirar el consentimiento de inteligencia artificial, desconectar Health Connect y borrar sus datos, y pausar o borrar la personalización de salud.</li>
+    <li>Puedes retirar cualquier consentimiento cuando quieras, sin que afecte a lo hecho antes. Sin el consentimiento de datos de salud la aplicación no puede funcionar, así que retirarlo supone eliminar la cuenta.</li>
+    <li>Puedes revocar los permisos de cámara, micrófono, notificaciones y Health Connect en los ajustes del teléfono.</li>
+    <li>Puedes eliminar tu cuenta en Perfil &gt; Eliminar cuenta, o pedirlo por correo aunque ya no tengas la aplicación, como explica la página pública de eliminación de cuenta.</li>
+    <li>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:privacidad@sideraldynamic.com">privacidad@sideraldynamic.com</a>. Te responderemos en un plazo máximo de un mes.</li>
+    <li>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</li>
+  </ul>
+  <h2 id="seguridad">10. Seguridad</h2>
+  <p>Los datos viajan cifrados (HTTPS/TLS). Cada persona solo puede acceder a sus propios datos, las fotos de comidas son privadas y las claves de los proveedores no están en la aplicación. En el teléfono, la sesión se guarda cifrada y las fotos descargadas se borran al cerrar sesión.</p>
+  <h2 id="menores">11. Edad mínima y salud</h2>
+  <p>La aplicación es para personas de 18 años o más. Ofrece información general de bienestar: no diagnostica, no trata y no sustituye a un profesional sanitario.</p>
+  <h2 id="cambios">12. Cambios en esta política</h2>
+  <p>Si la cambiamos, actualizaremos la fecha de arriba y te avisaremos en la aplicación. Si cambia lo que te pedimos, volveremos a pedirte tu consentimiento.</p>
 </body>
 </html>

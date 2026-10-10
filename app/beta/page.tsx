@@ -16,7 +16,7 @@ export default function BetaPage() {
       </section>
       <section className="contact-panel shell">
         <div><p className="eyebrow">Solicitar acceso</p><h2>¿Quieres participar?</h2><p>Escríbenos desde la cuenta de Google que utilizarás en Play Store.</p></div>
-        <a className="button button-primary" href="mailto:privacidad@excelsor.es?subject=Solicitud%20de%20acceso%20beta%20-%20Nutrici%C3%B3n%20Inteligente">Solicitar invitación <span>→</span></a>
+        <a className="button button-primary" href="mailto:privacidad@sideraldynamic.com?subject=Solicitud%20de%20acceso%20beta%20-%20Nutrici%C3%B3n%20Inteligente">Solicitar invitación <span>→</span></a>
       </section>
       <SiteFooter />
     </main>

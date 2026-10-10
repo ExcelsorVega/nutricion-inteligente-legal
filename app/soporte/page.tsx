@@ -27,7 +27,7 @@ export default function SupportPage() {
       </section>
       <section className="contact-panel shell">
         <div><p className="eyebrow">Contacto</p><h2>¿Sigue sin funcionar?</h2><p>Escríbenos y cuéntanos qué estabas intentando hacer. No incluyas información médica ni datos sensibles innecesarios.</p></div>
-        <a className="button button-primary" href="mailto:privacidad@excelsor.es?subject=Soporte%20Nutrici%C3%B3n%20Inteligente">Escribir a soporte <span>→</span></a>
+        <a className="button button-primary" href="mailto:privacidad@sideraldynamic.com?subject=Soporte%20Nutrici%C3%B3n%20Inteligente">Escribir a soporte <span>→</span></a>
       </section>
       <SiteFooter />
     </main>
